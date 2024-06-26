@@ -5,6 +5,7 @@ import { FiFacebook } from "react-icons/fi";
 import { CiTwitter } from "react-icons/ci";
 import { TiSocialInstagram } from "react-icons/ti";
 import { SlSocialFacebook } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const HeaderPage = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -36,15 +37,15 @@ const HeaderPage = () => {
       <div className="container mx-auto px-12 py-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <a href="#" title="Facebook">
+            <Link to={"https://www.facebook.com/propeterra"} target="_blank">
               <SlSocialFacebook size={18} className="" />
-            </a>
-            <a href="#" title="Twitter">
+            </Link>
+            <Link to={"https://twitter.com/propeterra"} target="_blank">
               <CiTwitter size={24} />
-            </a>
-            <a href="#" title="Instagram">
+            </Link>
+            <Link to={"https://www.instagram.com/propeterra/"} target="_blank">
               <TiSocialInstagram size={24} />
-            </a>
+            </Link>
           </div>
           <a href="index.html" className="text-lg font-semibold">
             <img src={companyLogo2} alt="" />

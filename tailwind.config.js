@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "light-grey": "#f5f5f5",
+        "light-wight": "#F4F4F4",
       },
       screens: {
         xss: "360px", // Correct

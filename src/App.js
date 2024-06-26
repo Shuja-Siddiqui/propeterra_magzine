@@ -4,6 +4,7 @@ import SearchBox from "./components/header/Search";
 import NavBar from "./components/navbar/NavBar";
 import HeaderPage from "./pages/Header";
 import { useState } from "react";
+import Footer from "./pages/Footer";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} /> */}
+        <Footer />
       </div>
     </Router>
   );

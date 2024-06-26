@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 const NavBar = ({ showSearch, setShowSearch }) => {
   const menuItems = [
     {
+      title: "Home",
+      link: "index.html",
+    },
+    {
       title: "Frontier Markets",
       link: "index.html",
     },
