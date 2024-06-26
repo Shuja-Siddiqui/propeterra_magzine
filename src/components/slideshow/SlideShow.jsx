@@ -10,7 +10,7 @@ const SlideShow = () => {
       setSlideIndex((prevIndex) =>
         prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
-    }, 115000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
