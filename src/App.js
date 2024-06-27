@@ -6,21 +6,33 @@ import HeaderPage from "./pages/Header";
 import { useState } from "react";
 import Footer from "./pages/Footer";
 import SlideShow from "./components/slideshow/SlideShow";
+import useIsMobile from "./hooks/useIsMobile";
+import MobileHeader from "./components/header/MobileHeader";
+import MobileFooter from "./components/footer/MobileFooter";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
+  const isMobile = useIsMobile();
   return (
     <Router>
       <div className="">
-        <HeaderPage />
-        <NavBar showSearch={showSearch} setShowSearch={setShowSearch} />
+        {isMobile ? (
+          <MobileHeader showSearch={showSearch} setShowSearch={setShowSearch} />
+        ) : (
+          <HeaderPage />
+        )}
+        {isMobile ? (
+          <></>
+        ) : (
+          <NavBar showSearch={showSearch} setShowSearch={setShowSearch} />
+        )}
         {showSearch && <SearchBox showSearch={showSearch} />}
         {/* <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} /> */}
         <SlideShow />
-        <Footer />
+        {isMobile ? <MobileFooter /> : <Footer />}
       </div>
     </Router>
   );

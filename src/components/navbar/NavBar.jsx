@@ -33,7 +33,7 @@ const NavBar = ({ showSearch, setShowSearch }) => {
 
   return (
     <div className="container-fluid no-left-padding no-right-padding menu-block sticky top-0 z-10 shadow-md">
-      <div className="w-full px-8 container bg-white">
+      <div className="w-full px-8 container-fluid bg-white">
         <nav className="bg-white p-4">
           <div className="container mx-auto flex justify-between items-center">
             <ul className="w-full flex justify-center items-center">

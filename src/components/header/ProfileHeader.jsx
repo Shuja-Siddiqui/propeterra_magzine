@@ -1,13 +1,12 @@
 import React, { useRef, useState } from "react";
-import { companyLogo, companyLogo2 } from "../assets/images";
 import { LiaUserCircle } from "react-icons/lia";
-import { FiFacebook } from "react-icons/fi";
-import { CiTwitter } from "react-icons/ci";
+import { CiSearch, CiTwitter } from "react-icons/ci";
 import { TiSocialInstagram } from "react-icons/ti";
 import { SlSocialFacebook } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import { RxCross1 } from "react-icons/rx";
 
-const HeaderPage = () => {
+const ProfileHeader = ({ showSearch, setShowSearch }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -31,10 +30,10 @@ const HeaderPage = () => {
   };
   return (
     <header
-      className="bg-white shadow pt-[25px] pb-[25px]"
+      className="bg-white shadow"
       style={{ borderBottom: "1px solid #F2F2F2" }}
     >
-      <div className="container-fluid mx-auto px-12 py-6">
+      <div className="container mx-auto py-[15px] px-[5px]">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <Link to={"https://www.facebook.com/propeterra"} target="_blank">
@@ -47,10 +46,15 @@ const HeaderPage = () => {
               <TiSocialInstagram size={24} />
             </Link>
           </div>
-          <a href="index.html" className="text-lg font-semibold">
-            <img src={companyLogo2} alt="" />
-          </a>
+
           <div className="flex items-center space-x-4">
+            <button
+              type="button"
+              onClick={() => setShowSearch(!showSearch)}
+              className="text-gray-500"
+            >
+              {showSearch ? <RxCross1 size={24} /> : <CiSearch size={24} />}
+            </button>
             <div
               className="relative"
               onMouseEnter={handleMouseEnter}
@@ -64,7 +68,7 @@ const HeaderPage = () => {
               {showDropdown && (
                 <div
                   id="dropdownHover"
-                  className="absolute right-0 mt-1 w-48 bg-white border border-gray-200 rounded shadow-lg z-20"
+                  className="absolute right-0 mt-1 w-48 bg-white border border-gray-200 rounded shadow-lg z-10"
                   onMouseEnter={cancelMouseLeave}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -96,4 +100,4 @@ const HeaderPage = () => {
   );
 };
 
-export default HeaderPage;
+export default ProfileHeader;

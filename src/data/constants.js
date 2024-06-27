@@ -88,3 +88,26 @@ export const policyItems = [
   { label: "Your Ad Choices", link: "#" },
   { label: "Accessibility", link: "#" },
 ];
+
+export const mobileFooterItems = [
+  {
+    title: "Membership",
+    link: "index.html",
+  },
+  {
+    title: "Customer Service",
+    link: "#",
+  },
+  {
+    title: "Tools & Features",
+    link: "#",
+  },
+  {
+    title: "Ads",
+    link: "#",
+  },
+  {
+    title: "Privacy Notice",
+    link: "#",
+  },
+];
