@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function MobileNavbar() {
+function MobileNavbar({ setNewsFilter }) {
   const menuItems = [
     {
       title: "Home",
@@ -42,7 +42,11 @@ function MobileNavbar() {
                   fontWeight: 500,
                 }}
               >
-                <Link to={item?.link} className="text-black hover:opacity-50">
+                <Link
+                  // to={item?.link}
+                  onClick={() => setNewsFilter(item?.title)}
+                  className="text-black hover:opacity-50"
+                >
                   {item?.title?.toUpperCase()}
                 </Link>
               </li>

@@ -14,7 +14,11 @@ const SearchBox = ({ showSearch }) => {
     console.log("Searching for:", searchQuery);
   };
   return (
-    <div className="sm:w-full xs:w-full xss:w-full sm:absolute xs:absolute xss:absolute sm:z-10 xs:z-10 xss:z-10">
+    <div
+      className={`sm:w-full xs:w-full xss:w-full sm:absolute xs:absolute xss:absolute sm:z-10 xs:z-10 xss:z-10 ${
+        showSearch ? "animate-slide" : ""
+      }`}
+    >
       <div className="container bg-light-grey mx-auto px-10 w-full">
         <form className="w-full pt-5 pb-5" onSubmit={handleSubmit}>
           <div className="relative">

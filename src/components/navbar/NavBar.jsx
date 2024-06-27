@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
-const NavBar = ({ showSearch, setShowSearch }) => {
+const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
   const menuItems = [
     {
       title: "Home",
@@ -44,7 +44,8 @@ const NavBar = ({ showSearch, setShowSearch }) => {
                     style={{ fontFamily: "sans-serif", lineHeight: "1.53" }}
                   >
                     <Link
-                      to={item?.link}
+                      // to={item?.link}
+                      onClick={() => setNewsFilter(item?.title)}
                       className="text-black hover:opacity-50"
                     >
                       {item?.title?.toUpperCase()}

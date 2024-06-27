@@ -6,7 +6,7 @@ import { companyLogo2 } from "../../assets/images";
 import ProfileHeader from "./ProfileHeader";
 import MobileNavbar from "../navbar/MobileNavbar";
 
-const MobileHeader = ({ showSearch, setShowSearch }) => {
+const MobileHeader = ({ setNewsFilter, showSearch, setShowSearch }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -56,7 +56,7 @@ const MobileHeader = ({ showSearch, setShowSearch }) => {
         </div>
       </div>
 
-      {isNavCollapsed ? <MobileNavbar /> : <></>}
+      {isNavCollapsed ? <MobileNavbar setNewsFilter={setNewsFilter} /> : <></>}
     </>
   );
 };
