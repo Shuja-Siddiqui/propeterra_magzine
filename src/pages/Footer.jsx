@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { BsSnapchat } from "react-icons/bs";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { GoTriangleUp } from "react-icons/go";
 import { IoLogoInstagram } from "react-icons/io";
@@ -15,9 +14,11 @@ import {
   toolsItems,
 } from "../data/constants";
 import { appStore, googlePlay } from "../assets/images";
+import useIsMobile from "../hooks/useIsMobile";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useIsMobile();
   const editionItems = [
     { label: "English", href: "#" },
     { label: "中文 (Chinese)", href: "#" },
@@ -31,7 +32,7 @@ const Footer = () => {
   return (
     <>
       {/* First */}
-      <div className="container mx-auto px-12 bg-light-grey">
+      <div className="container-fluid mx-auto px-12 bg-light-grey">
         <div className="text-black py-4">
           <div className="container mx-auto flex justify-between items-center">
             {/* Child */}
@@ -257,7 +258,7 @@ const Footer = () => {
       </div>
 
       {/* Third */}
-      <div className="container mx-auto px-12 py-6 bg-light-grey">
+      <div className="container-fluid mx-auto px-12 py-6 bg-light-grey">
         <div className="products-sector">
           <div className="products-wrapper">
             <ul
@@ -283,7 +284,7 @@ const Footer = () => {
       </div>
 
       {/* Fourth */}
-      <div className="container mx-auto px-[20%] py-6 bg-light-white">
+      <div className="container-fluid mx-auto px-[20%] py-6 bg-light-white">
         <div className="products-sector">
           <div className="products-wrapper">
             <ul

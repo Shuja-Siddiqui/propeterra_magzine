@@ -1,7 +1,6 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  height: 100;
   position: relative;
   margin: auto;
   overflow: hidden; /* Ensure container does not expand vertically */
@@ -20,10 +19,10 @@
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  /* font-size: 15px; */
   padding: 8px 12px;
   position: absolute;
-  bottom: 50%;
+  /* bottom: 50%; */
   width: 100%;
   text-align: center;
 }

@@ -8,7 +8,7 @@ module.exports = {
         "light-wight": "#F4F4F4",
       },
       screens: {
-        xss: "360px", // Correct
+        xss: "340px", // Correct
         xs: "475px",
         sm: "640px", // Correct
         md: "768px", // Correct
