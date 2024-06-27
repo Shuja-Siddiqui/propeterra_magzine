@@ -47,7 +47,9 @@ export const data = [
     date: "2024-02-15",
     title: "Nigeria's Oil Production Increases",
     full_text: "",
-    images: [],
+    images: [
+      "https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg",
+    ],
     link: "https://example.com/article5",
   },
   {
@@ -97,5 +99,35 @@ export const data = [
     full_text: "",
     images: [],
     link: "https://example.com/article10",
+  },
+  {
+    category: "emerging",
+    country: "Kenya",
+    date: "2024-06-25",
+    title: "Economic Growth in Kenya Shows Positive Trends",
+    full_text: "",
+    images: [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+    ],
+    link: "https://example.com/article1",
+  },
+  {
+    category: "emerging",
+    country: "India",
+    date: "2024-05-18",
+    title: "India's Tech Industry Boom",
+    full_text: "",
+    images: ["https://example.com/image3.jpg"],
+    link: "https://example.com/article2",
+  },
+  {
+    category: "emerging",
+    country: "Brazil",
+    date: "2024-04-10",
+    title: "Brazil's Agricultural Advancements",
+    full_text: "",
+    images: [],
+    link: "https://example.com/article3",
   },
 ];

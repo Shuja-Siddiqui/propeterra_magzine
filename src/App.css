@@ -40,3 +40,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* Search Animate */
+.animate-slide {
+  animation: slide 0.5s forwards;
+}

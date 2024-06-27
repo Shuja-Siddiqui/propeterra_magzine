@@ -1,0 +1,141 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-category {
+  color: #aaa;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.card-link {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-details {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.card:hover .card-details {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Pgination */
+/* styles.css */
+
+/* Pagination container */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination links */
+.page-numbers {
+  padding: 5px 21px;
+  margin: 0 4px;
+  color: #333;
+  text-decoration: none;
+  border-right: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  /* Tailwind CSS classes */
+  @apply inline-block text-center font-medium leading-5 text-gray-700 sm:px-[10px] xs:px-[10px] xss:px-[10px];
+}
+
+/* Current page link */
+.page-numbers.current {
+  background-color: #3182ce;
+  color: white;
+
+  /* Tailwind CSS classes */
+  @apply bg-card-grey hover:bg-card-grey-hover text-white;
+}
+
+/* Previous and Next links */
+.prev,
+.next {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-family: "sans-serif";
+
+  /* Tailwind CSS classes */
+  @apply inline-block text-center font-bold leading-5;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #3182ce;
+  color: white;
+
+  /* Tailwind CSS classes */
+  @apply bg-card-grey text-white;
+}
