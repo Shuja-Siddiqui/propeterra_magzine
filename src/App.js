@@ -15,6 +15,7 @@ import MobileHeader from "./components/header/MobileHeader";
 import MobileFooter from "./components/footer/MobileFooter";
 import MainPage from "./components/blogPost/MainPage";
 import Home from "./pages/Home";
+import ScrollToTop from "./components/helper/ScrollToTop";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
@@ -22,6 +23,7 @@ function App() {
   const isMobile = useIsMobile();
   return (
     <Router>
+      <ScrollToTop />
       <div className="">
         {isMobile ? (
           <MobileHeader
