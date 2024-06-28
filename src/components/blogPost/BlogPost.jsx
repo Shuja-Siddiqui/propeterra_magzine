@@ -3,6 +3,7 @@ import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import { FaTwitter } from "react-icons/fa";
 import MyContext from "../../context/MyContext";
+import { formatDate } from "../../utils";
 
 const BlogPost = () => {
   const { state } = useContext(MyContext);
@@ -30,7 +31,7 @@ const BlogPost = () => {
                 {data?.country + ","}
               </span>
             </span>
-            <span className="post-date ml-2">{data?.date}</span>
+            <span className="post-date ml-2">{formatDate(data?.date)}</span>
           </div>
         </div>
         {/* Para */}
