@@ -37,9 +37,10 @@ const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
         <nav className="bg-white p-4">
           <div className="container mx-auto flex justify-between items-center">
             <ul className="w-full flex justify-center items-center">
-              {menuItems.map((item) => {
+              {menuItems.map((item, index) => {
                 return (
                   <li
+                    key={index}
                     className="mx-[19px] text-sm"
                     style={{ fontFamily: "sans-serif", lineHeight: "1.53" }}
                   >
