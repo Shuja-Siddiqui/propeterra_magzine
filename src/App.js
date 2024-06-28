@@ -10,13 +10,11 @@ import NavBar from "./components/navbar/NavBar";
 import HeaderPage from "./pages/Header";
 import { useState } from "react";
 import Footer from "./pages/Footer";
-import SlideShow from "./components/slideshow/SlideShow";
 import useIsMobile from "./hooks/useIsMobile";
 import MobileHeader from "./components/header/MobileHeader";
 import MobileFooter from "./components/footer/MobileFooter";
-import BlogMasonry from "./components/blog/BlogMasonary";
-import Cards from "./components/blog/Card";
 import MainPage from "./components/blogPost/MainPage";
+import Home from "./pages/Home";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
@@ -44,19 +42,8 @@ function App() {
           />
         )}
         {showSearch && <SearchBox showSearch={showSearch} />}
-        {/* <Route path="/about" component={About} /> */}
-        {/* <Route path="/services" component={Services} /> */}
         <Routes>
-          <Route
-            path="/"
-            exact
-            element={
-              <>
-                <SlideShow />
-                <Cards newsFilter={newsFilter} />
-              </>
-            }
-          />
+          <Route path="/" exact element={<Home newsFilter={newsFilter} />} />
           <Route path="/blog" element={<MainPage />} />
         </Routes>
 

@@ -24,7 +24,7 @@ const MobileHeader = ({ setNewsFilter, showSearch, setShowSearch }) => {
       <div className="m-auto w-full p-[15px]">
         <div className="w-full">
           <nav className="flex flex-wrap items-center justify-between">
-            <Link className="navbar-brand" to="index.html">
+            <Link className="navbar-brand" to={"/"}>
               <img src={companyLogo2} alt="" />
             </Link>
             <div className="flex flex-row-reverse gap-4">
