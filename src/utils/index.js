@@ -6,3 +6,7 @@ export function formatDate(inputDate) {
   const [month, day, year] = formattedDate.split(" ");
   return `${month.toUpperCase()} ${day.replace(",", "")}, ${year}`;
 }
+
+export const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};

@@ -2,32 +2,33 @@ import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../../utils";
 
 const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
   const menuItems = [
     {
       title: "Home",
-      link: "index.html",
+      link: "/",
     },
     {
       title: "Frontier Markets",
-      link: "index.html",
+      link: "/",
     },
     {
       title: "Emerging Markets",
-      link: "#",
+      link: "/",
     },
     {
       title: "Developed Markets",
-      link: "#",
+      link: "/",
     },
     {
       title: "Special Situations",
-      link: "#",
+      link: "/",
     },
     {
       title: "Platform",
-      link: "#",
+      link: "/",
     },
   ];
 
@@ -45,8 +46,11 @@ const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
                     style={{ fontFamily: "sans-serif", lineHeight: "1.53" }}
                   >
                     <Link
-                      // to={item?.link}
-                      onClick={() => setNewsFilter(item?.title)}
+                      to={item?.link}
+                      onClick={() => {
+                        setNewsFilter(item?.title);
+                        scrollToTop();
+                      }}
                       className="text-black hover:opacity-50"
                     >
                       {item?.title?.toUpperCase()}
