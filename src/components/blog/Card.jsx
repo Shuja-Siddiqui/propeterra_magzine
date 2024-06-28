@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./style.css";
 import Masonry from "react-masonry-css";
 import { data } from "../../api/dummy";
 import Pagination from "./Pagination";
+import { useNavigate } from "react-router-dom";
+import MyContext from "../../context/MyContext";
 
 const breakpointColumnsObj = {
   default: 3,
@@ -57,6 +59,8 @@ function Card({
   country,
   index,
 }) {
+  const { setState } = useContext(MyContext);
+  const navigate = useNavigate();
   // Determine the column index based on the card index
   const columnIndex = index % 3;
   const columnPosition = Math.floor(index / 3);
@@ -69,6 +73,19 @@ function Card({
   return (
     <div>
       <div
+        onClick={() => {
+          setState({
+            images,
+            category,
+            title,
+            description,
+            link,
+            date,
+            country,
+            index,
+          });
+          navigate("/blog");
+        }}
         className="card bg-card-grey cursor-pointer hover:opacity-90"
         style={{ height: randomHeight }}
       >

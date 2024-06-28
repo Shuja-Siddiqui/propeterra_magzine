@@ -9,6 +9,7 @@ module.exports = {
         "card-grey": "#bcbaba",
         "card-grey-hover": "#959595",
         "text-grey": "#a1a1a1",
+        "blog-para": "#717171",
       },
       screens: {
         xss: "340px", // Correct
