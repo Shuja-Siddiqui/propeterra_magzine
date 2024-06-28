@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css"; // Import your CSS file here
 import useIsMobile from "../../hooks/useIsMobile";
+import { scrollToTop } from "../../utils";
 
 const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
   const isMobile = useIsMobile();
@@ -10,6 +11,7 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
   // Function to handle page number clicks
   const handleClick = (pageNumber) => {
     setCurrentPage(pageNumber); // Update current page state
+    scrollToTop(); // Scroll to the top of the page
   };
 
   // Calculate start and end pages to show
