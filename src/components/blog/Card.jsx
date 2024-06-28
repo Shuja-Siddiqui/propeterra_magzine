@@ -14,7 +14,7 @@ const breakpointColumnsObj = {
 
 function Cards({ newsFilter }) {
   const [currentPage, setCurrentPage] = useState(1); // State to track current page
-  const itemsPerPage = 5;
+  const itemsPerPage = 6;
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   // Filter News Articles
