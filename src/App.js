@@ -1,16 +1,20 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Routes,
+} from "react-router-dom";
 import SearchBox from "./components/header/Search";
 import NavBar from "./components/navbar/NavBar";
 import HeaderPage from "./pages/Header";
 import { useState } from "react";
 import Footer from "./pages/Footer";
-import SlideShow from "./components/slideshow/SlideShow";
 import useIsMobile from "./hooks/useIsMobile";
 import MobileHeader from "./components/header/MobileHeader";
 import MobileFooter from "./components/footer/MobileFooter";
-import BlogMasonry from "./components/blog/BlogMasonary";
-import Cards from "./components/blog/Card";
+import MainPage from "./components/blogPost/MainPage";
+import Home from "./pages/Home";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
@@ -38,13 +42,11 @@ function App() {
           />
         )}
         {showSearch && <SearchBox showSearch={showSearch} />}
-        {/* <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
-          <Route path="/contact" component={Contact} /> */}
-        <SlideShow />
-        {/* <BlogMasonry /> */}
-        <Cards newsFilter={newsFilter} />
+        <Routes>
+          <Route path="/" exact element={<Home newsFilter={newsFilter} />} />
+          <Route path="/blog" element={<MainPage />} />
+        </Routes>
+
         {isMobile ? <MobileFooter /> : <Footer />}
       </div>
     </Router>

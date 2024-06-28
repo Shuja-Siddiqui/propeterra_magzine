@@ -47,9 +47,9 @@ const HeaderPage = () => {
               <TiSocialInstagram size={24} />
             </Link>
           </div>
-          <a href="index.html" className="text-lg font-semibold">
+          <Link to={"/"} className="text-lg font-semibold">
             <img src={companyLogo2} alt="" />
-          </a>
+          </Link>
           <div className="flex items-center space-x-4">
             <div
               className="relative"
