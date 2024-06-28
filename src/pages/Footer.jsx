@@ -114,9 +114,10 @@ const Footer = () => {
             <p className="font-bold">
               {membershipItems[0]?.title?.toUpperCase()}
             </p>
-            {membershipItems?.map((item) => {
+            {membershipItems?.map((item, index) => {
               return (
                 <ul
+                  key={index}
                   className="flex justify-between items-center text-sm mt-[5px] text-[13px]"
                   aria-labelledby="footer-products-title"
                   style={{ fontFamily: "Retina" }}
@@ -135,9 +136,10 @@ const Footer = () => {
             <p className="font-bold">
               {customerServiceItems[0]?.title?.toUpperCase()}
             </p>
-            {customerServiceItems?.map((item) => {
+            {customerServiceItems?.map((item, index) => {
               return (
                 <ul
+                  key={index}
                   className="flex justify-between items-center text-sm mt-[5px] text-[13px]"
                   aria-labelledby="footer-products-title"
                   style={{ fontFamily: "Retina" }}
@@ -154,9 +156,10 @@ const Footer = () => {
           {/* Child */}
           <div className="products-wrapper border-l-[1px] border-solid border-black h-full px-4">
             <p className="font-bold">{toolsItems[0]?.title?.toUpperCase()}</p>
-            {toolsItems?.map((item) => {
+            {toolsItems?.map((item, index) => {
               return (
                 <ul
+                  key={index}
                   className="flex justify-between items-center text-sm mt-[5px] text-[13px]"
                   aria-labelledby="footer-products-title"
                   style={{ fontFamily: "Retina" }}
@@ -173,9 +176,10 @@ const Footer = () => {
           {/* Child */}
           <div className="products-wrapper border-l-[1px] border-solid border-black h-full px-4">
             <p className="font-bold">{adsItems[0]?.title?.toUpperCase()}</p>
-            {adsItems?.map((item) => {
+            {adsItems?.map((item, index) => {
               return (
                 <ul
+                  key={index}
                   className="flex justify-between items-center text-sm mt-[5px] text-[13px]"
                   aria-labelledby="footer-products-title"
                   style={{ fontFamily: "Retina" }}
@@ -192,9 +196,10 @@ const Footer = () => {
           {/* Child */}
           <div className="products-wrapper border-l-[1px] border-solid border-black h-full px-4">
             <p className="font-bold">{moreItems[0]?.title?.toUpperCase()}</p>
-            {moreItems?.map((item) => {
+            {moreItems?.map((item, index) => {
               return (
                 <ul
+                  key={index}
                   className="flex justify-between items-center text-sm mt-[5px]  text-[13px]"
                   aria-labelledby="footer-products-title"
                   style={{ fontFamily: "Retina" }}
@@ -266,16 +271,16 @@ const Footer = () => {
               aria-labelledby="footer-products-title"
               style={{ fontFamily: "Retina" }}
             >
-              {menuItems.map((item) => {
+              {menuItems.map((item, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     <li>
                       <Link to={item?.link} target="_blank">
                         {item?.title}
                       </Link>
                     </li>
                     <span>|</span>
-                  </>
+                  </React.Fragment>
                 );
               })}
             </ul>
@@ -291,15 +296,15 @@ const Footer = () => {
               className="flex justify-between items-center text-[11px]"
               aria-labelledby="footer-products-title"
             >
-              {policyItems.map((item) => {
+              {policyItems.map((item, index) => {
                 return (
-                  <>
+                  <React.Fragment key={index}>
                     <li>
                       <Link to={item?.link} target="_blank">
                         {item?.label}
                       </Link>
                     </li>
-                  </>
+                  </React.Fragment>
                 );
               })}
             </ul>

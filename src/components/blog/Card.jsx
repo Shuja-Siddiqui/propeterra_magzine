@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Masonry from "react-masonry-css";
 import { data } from "../../api/dummy";
@@ -11,6 +11,10 @@ const breakpointColumnsObj = {
 };
 
 function Cards({ newsFilter }) {
+  const [currentPage, setCurrentPage] = useState(1); // State to track current page
+  const itemsPerPage = 5;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   // Filter News Articles
   const filteredData =
     newsFilter === "Home"
@@ -18,6 +22,11 @@ function Cards({ newsFilter }) {
       : data?.filter(
           (item) => item?.category === newsFilter?.split(" ")[0]?.toLowerCase()
         );
+
+  // Calculate total number of pages
+  const totalPages = Math.ceil(filteredData?.length / itemsPerPage);
+  // Get current array of pages
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
   return (
     <div className="App xl:p-12 lg:p-12 md:p-12 sm:p-6 xs:p-6 xss:p-6">
       <Masonry
@@ -25,11 +34,15 @@ function Cards({ newsFilter }) {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {filteredData?.map((card, index) => (
+        {currentItems?.map((card, index) => (
           <Card key={index} index={index} {...card} />
         ))}
       </Masonry>
-      <Pagination />
+      <Pagination
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        totalPages={totalPages}
+      />
     </div>
   );
 }

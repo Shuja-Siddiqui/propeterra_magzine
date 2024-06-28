@@ -2,17 +2,14 @@ import React, { useState } from "react";
 import "./style.css"; // Import your CSS file here
 import useIsMobile from "../../hooks/useIsMobile";
 
-const Pagination = () => {
-  const [currentPage, setCurrentPage] = useState(1); // State to track current page
+const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
   const isMobile = useIsMobile();
-  const totalPages = 10; // Example: Total number of page
+  // const totalPages = 10;
   const pagesToShow = isMobile ? 1 : 5; // Number of pages to show in pagination
 
   // Function to handle page number clicks
   const handleClick = (pageNumber) => {
     setCurrentPage(pageNumber); // Update current page state
-    // Replace with your navigation logic or API call based on the clicked page number
-    console.log(`Navigating to page ${pageNumber}`);
   };
 
   // Calculate start and end pages to show
@@ -112,7 +109,11 @@ const Pagination = () => {
     );
   }
 
-  return <div className="w-full nav-links xl:px-12 lg:px-12 md:px-12 sm:px-6 xs:px-6 xss:px-6">{pageNumbers}</div>;
+  return (
+    <div className="w-full nav-links xl:px-12 lg:px-12 md:px-12 sm:px-6 xs:px-6 xss:px-6">
+      {pageNumbers}
+    </div>
+  );
 };
 
 export default Pagination;

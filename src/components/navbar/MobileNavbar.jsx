@@ -32,9 +32,10 @@ function MobileNavbar({ setNewsFilter }) {
     <div className=" mx-auto p-[15px] pt-0" id="navbar1">
       <div className="container mx-auto justify-between items-center">
         <ul className="w-full flex flex-col gap-2">
-          {menuItems.map((item) => {
+          {menuItems.map((item, index) => {
             return (
               <li
+                key={index}
                 className="text-[13px]"
                 style={{
                   fontFamily: "sans-serif",

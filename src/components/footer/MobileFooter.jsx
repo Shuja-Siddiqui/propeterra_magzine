@@ -31,9 +31,9 @@ const MobileFooter = () => {
             onChange={handleChange}
             className="w-full block appearance-none bg-light-grey  hover:border-gray-400 px-4 py-4 pr-8 leading-tight focus:outline-none"
           >
-            {editionItems?.map((item) => {
+            {editionItems?.map((item, index) => {
               return (
-                <option value={item?.label} label={item?.label}>
+                <option key={index} value={item?.label} label={item?.label}>
                   {item?.label}
                 </option>
               );
@@ -94,15 +94,15 @@ const MobileFooter = () => {
             aria-labelledby="footer-products-title"
             style={{ fontFamily: "Retina" }}
           >
-            {mobileFooterItems.map((item) => {
+            {mobileFooterItems.map((item, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   <li className="mb-[15px]">
                     <Link to={item?.link} target="_blank">
                       {item?.title}
                     </Link>
                   </li>
-                </>
+                </React.Fragment>
               );
             })}
           </ul>
