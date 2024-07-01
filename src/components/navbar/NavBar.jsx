@@ -40,33 +40,29 @@ const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
             <ul className="w-full flex justify-center items-center">
               {menuItems.map((item, index) => {
                 return (
-                  <li
-                    key={index}
-                    className="mx-[19px] text-sm"
-                    style={{ fontFamily: "sans-serif", lineHeight: "1.53" }}
-                  >
+                  <li key={index} className="mx-[19px] text-sm">
                     <Link
                       to={item?.link}
                       onClick={() => {
                         setNewsFilter(item?.title);
                         scrollToTop();
                       }}
-                      className="text-black hover:opacity-50"
+                      className="text-common-color font-medium hover:text-black font-montserrat text-sm tracking-[0.325px] leading-relaxed hover:font-medium opacity-65"
                     >
                       {item?.title?.toUpperCase()}
                     </Link>
                   </li>
                 );
               })}
+              {/* Button */}
+              <button
+                type="button"
+                onClick={() => setShowSearch(!showSearch)}
+                className="text-gray-500"
+              >
+                {showSearch ? <RxCross1 size={24} /> : <CiSearch size={24} />}
+              </button>
             </ul>
-            {/* Button */}
-            <button
-              type="button"
-              onClick={() => setShowSearch(!showSearch)}
-              className="text-gray-500"
-            >
-              {showSearch ? <RxCross1 size={24} /> : <CiSearch size={24} />}
-            </button>
           </div>
         </nav>
       </div>

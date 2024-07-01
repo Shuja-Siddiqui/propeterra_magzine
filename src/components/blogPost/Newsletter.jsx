@@ -5,7 +5,7 @@ function Newsletter() {
   return (
     <div className="widget widget-popular-posts mt-[27px]">
       <h3
-        style={{ textTransform: "uppercase", fontFamily: "sans-serif" }}
+        style={{ textTransform: "uppercase", fontFamily: "Escrow Condensed" }}
         className="widget-title text-[16px] leading-[1.66] pb-[10px] text-center"
       >
         NEWSLETTER
@@ -24,11 +24,18 @@ function Newsletter() {
             <GoMail size={20} />
           </div>
         </div>
-        <h2 className="text-xl font-bold mb-2 text-[18px] tracking-[-0.45px] leading-[1.66]">
+        <h2
+          className="text-xl font-bold mb-2 text-[18px] tracking-[-0.45px] leading-[1.66]"
+          style={{
+            fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+          }}
+        >
           Sign Up for Newsletter
         </h2>
         <p
-          style={{ fontFamily: "Hind" }}
+          style={{
+            fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+          }}
           className="text-blog-para text-[16px] mb-4 text-center"
         >
           Sign up to receive latest posts and news

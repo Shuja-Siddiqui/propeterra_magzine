@@ -16,6 +16,7 @@ import MobileFooter from "./components/footer/MobileFooter";
 import MainPage from "./components/blogPost/MainPage";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/helper/ScrollToTop";
+import ImageCarousel from "./components/footer/ImageCarousel";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);

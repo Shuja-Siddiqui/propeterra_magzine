@@ -36,21 +36,23 @@ const HeaderPage = () => {
     >
       <div className="container-fluid mx-auto px-12 py-6">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-4">
+          <div className="w-[8%] flex items-center space-x-4">
             <Link to={"https://www.facebook.com/propeterra"} target="_blank">
-              <SlSocialFacebook size={18} className="" />
+              <SlSocialFacebook size={16} className="" />
             </Link>
             <Link to={"https://twitter.com/propeterra"} target="_blank">
-              <CiTwitter size={24} />
+              <CiTwitter size={20} />
             </Link>
             <Link to={"https://www.instagram.com/propeterra/"} target="_blank">
-              <TiSocialInstagram size={24} />
+              <TiSocialInstagram size={20} />
             </Link>
           </div>
-          <Link to={"/"} className="text-lg font-semibold">
-            <img src={companyLogo2} alt="" />
-          </Link>
-          <div className="flex items-center space-x-4">
+          <div className="">
+            <Link to={"/"} className="text-lg font-semibold">
+              <img src={companyLogo2} alt="" />
+            </Link>
+          </div>
+          <div className="w-[8%] justify-end flex items-center space-x-4">
             <div
               className="relative"
               onMouseEnter={handleMouseEnter}

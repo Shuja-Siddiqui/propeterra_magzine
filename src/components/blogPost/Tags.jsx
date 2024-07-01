@@ -5,7 +5,7 @@ const Tags = () => {
   return (
     <div className="widget widget-popular-posts mt-[27px]">
       <h3
-        style={{ textTransform: "uppercase", fontFamily: "sans-serif" }}
+        style={{ textTransform: "uppercase", fontFamily: "Escrow Condensed" }}
         className="widget-title text-[16px] leading-[1.66] pb-[10px] text-center"
       >
         Tags
