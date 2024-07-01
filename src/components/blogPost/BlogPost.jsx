@@ -23,7 +23,7 @@ const BlogPost = () => {
             {data?.category?.toUpperCase()}
           </h5>
           <h3
-            className="text-[25px] leading-[1.25] font-bold text-blog-title"
+            className="text-[25px] leading-[1.25] font-bold text-blog-title transform scale-y-[1.2] md:scale-y-[1.8] lg:scale-y-[1.8] xl:scale-y-[1.8] 2xl:scale-y-[1.8] 3xl:scale-y-[1.8]"
             style={{
               fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
             }}
@@ -76,7 +76,7 @@ const BlogPost = () => {
         <div className="w-full my-[4%]">
           <blockquote>
             <h3
-              className="text-[25px] leading-[1.25] font-bold xl:text-start lg:text-start md:text-start sm:text-center xs:text-center xss:text-center"
+              className="text-[25px] leading-[1.25] font-bold xl:text-start lg:text-start md:text-start sm:text-center xs:text-center xss:text-center transform scale-y-[1.2] md:scale-y-[1.8] lg:scale-y-[1.8] xl:scale-y-[1.8] 2xl:scale-y-[1.8] 3xl:scale-y-[1.8]"
               style={{
                 fontFamily:
                   "Escrow Condensed, Alternate Times New Roman, serif",
@@ -124,7 +124,7 @@ const BlogPost = () => {
         {/* Child Container Para */}
         <div className="w-full my-[4%]">
           <h4
-            className="text-[24px] leading-[1.25] font-bold"
+            className="text-[24px] leading-[1.25] font-bold transform scale-y-[1.2] md:scale-y-[1.8] lg:scale-y-[1.8] xl:scale-y-[1.8] 2xl:scale-y-[1.8] 3xl:scale-y-[1.8]"
             style={{
               fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
             }}
