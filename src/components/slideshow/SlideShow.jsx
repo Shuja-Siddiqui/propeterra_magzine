@@ -62,7 +62,11 @@ const SlideShow = () => {
       ></div>
       <div
         className="text xl:text-[36px] lg:text-[36px] md:text-[36px] sm:text-[19px] xs:text-[19px] xss:text-[19px] xl:bottom-[50%] lg:bottom-[50%] md:bottom-[50%] sm:bottom-[70%] xs:bottom-[70%] xss:bottom-[70%] font-common-font z-10"
-        style={{ fontWeight: 700, fontFamily: "montserrat" }}
+        style={{
+          fontWeight: 700,
+          fontFamily: "montserrat",
+          transform: "scale(1.1, 2)",
+        }}
       >
         Global Property Services
       </div>
