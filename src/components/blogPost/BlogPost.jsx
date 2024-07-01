@@ -12,8 +12,22 @@ const BlogPost = () => {
     <article className="type-post">
       <div className="entry-content">
         <div className="text-center mt-[27px]">
-          <h5 className="card-category">{data?.category?.toUpperCase()}</h5>
-          <h3 className="text-[24px] leading-[1.25] font-bold">
+          <h5
+            className="text-blog-description"
+            style={{
+              fontSize: "14px",
+              margin: "0 0 10px",
+              fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+            }}
+          >
+            {data?.category?.toUpperCase()}
+          </h5>
+          <h3
+            className="text-[25px] leading-[1.25] font-bold text-blog-title"
+            style={{
+              fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+            }}
+          >
             {data?.title}
           </h3>
           <p className="card-description">{data?.description}</p>
@@ -21,9 +35,13 @@ const BlogPost = () => {
             <div className="w-[5%] border-b-2 border-light-grey"></div>
           </div>
           <div
-            style={{ animationDuration: "0.6", textTransform: "uppercase" }}
+            style={{
+              animationDuration: "0.6",
+              textTransform: "uppercase",
+              fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+            }}
             href={data?.link}
-            className="text-blog-para text-[14px] leading-[2] font-bold mt-2"
+            className="text-blog-title text-[14px] leading-[2] font-normal mt-2"
           >
             <span className="byline ">
               by{" "}
@@ -36,8 +54,11 @@ const BlogPost = () => {
         </div>
         {/* Para */}
         <p
-          style={{ hyphens: "auto", fontFamily: "Hind" }}
-          className="text-blog-para leading-[1.7] text-[16px] mt-[10px]"
+          style={{
+            hyphens: "auto",
+            fontFamily: "Retina, Arial, Helvetica, sans-serif",
+          }}
+          className="text-blog-description font-light leading-[1.7] text-[16px] mt-[10px]"
         >
           These cases are perfectly simple and easy to distinguish. In a free
           hour, when our power of choice is untrammelled and when nothing
@@ -54,13 +75,24 @@ const BlogPost = () => {
         {/* Child Container Para */}
         <div className="w-full my-[4%]">
           <blockquote>
-            <h3 className="text-[24px] leading-[1.25] font-bold xl:text-start lg:text-start md:text-start sm:text-center xs:text-center xss:text-center">
+            <h3
+              className="text-[25px] leading-[1.25] font-bold xl:text-start lg:text-start md:text-start sm:text-center xs:text-center xss:text-center"
+              style={{
+                fontFamily:
+                  "Escrow Condensed, Alternate Times New Roman, serif",
+              }}
+            >
               “To live is the rarest thing in the world. Most people exist, that
               is all.”
             </h3>
 
             <p
-              style={{ fontWeight: "bold", lineHeight: "1.875" }}
+              style={{
+                fontWeight: "bold",
+                lineHeight: "1.875",
+                fontFamily:
+                  "Escrow Condensed, Alternate Times New Roman, serif",
+              }}
               className="text-center mt-2 text-blog-para text-[16px]"
             >
               Oscar Wilde
@@ -69,8 +101,11 @@ const BlogPost = () => {
         </div>
         {/* Para */}
         <p
-          style={{ hyphens: "auto", fontFamily: "Hind" }}
-          className="text-blog-para leading-[1.7] text-[16px] mt-[10px]"
+          style={{
+            hyphens: "auto",
+            fontFamily: "Retina, Arial, Helvetica, sans-serif",
+          }}
+          className="text-blog-description font-light leading-[1.7] text-[16px] mt-[10px]"
         >
           Nor again is there anyone who loves or pursues or desires to obtain
           pain of itself, because it is pain, but because occasionally
@@ -88,12 +123,20 @@ const BlogPost = () => {
 
         {/* Child Container Para */}
         <div className="w-full my-[4%]">
-          <h4 className="text-[24px] leading-[1.25] font-bold">
+          <h4
+            className="text-[24px] leading-[1.25] font-bold"
+            style={{
+              fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+            }}
+          >
             More into summer fashion
           </h4>
           <p
-            style={{ hyphens: "auto", fontFamily: "Hind" }}
-            className="text-blog-para leading-[1.7] text-[16px] mt-[10px]"
+            style={{
+              hyphens: "auto",
+              fontFamily: "Retina, Arial, Helvetica, sans-serif",
+            }}
+            className="text-blog-description font-light leading-[1.7] text-[16px] mt-[10px]"
           >
             Denouncing pleasure and praising pain was born and I will give you a
             complete account of the system, and expound the actual teachings of
@@ -110,13 +153,23 @@ const BlogPost = () => {
             src="http://placehold.it/770x450"
             alt="Post Image"
           />
-          <figcaption className="text-center my-[2%]">Summer heat</figcaption>
+          <figcaption
+            className="text-center my-[2%]"
+            style={{
+              fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
+            }}
+          >
+            Summer heat
+          </figcaption>
         </div>
 
         {/* Para */}
         <p
-          style={{ hyphens: "auto", fontFamily: "Hind" }}
-          className="text-blog-para leading-[1.7] text-[16px] mt-[10px]"
+          style={{
+            hyphens: "auto",
+            fontFamily: "Retina, Arial, Helvetica, sans-serif",
+          }}
+          className="text-blog-description font-light leading-[1.7] text-[16px] mt-[10px]"
         >
           Because it is pleasure, but because those who do not know how to
           pursue pleasure rationally encounter consequences that are extremely

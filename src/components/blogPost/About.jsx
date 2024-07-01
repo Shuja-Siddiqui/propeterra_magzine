@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="widget widget-popular-posts mt-[27px]">
       <h3
-        style={{ textTransform: "uppercase", fontFamily: "sans-serif" }}
+        style={{ textTransform: "uppercase", fontFamily: "Escrow Condensed" }}
         className="widget-title text-[16px] leading-[1.66] pb-[10px] text-center"
       >
         About Me
@@ -16,12 +16,21 @@ const About = () => {
       </div>
 
       <div>
-        <img src="http://placehold.it/345x230" alt="Post" />
+        <img
+          className="w-[100%]"
+          src="http://placehold.it/345x230"
+          alt="Post"
+        />
       </div>
       <div>
         <p
-          style={{ hyphens: "auto", fontFamily: "Hind", fontWeight: 400 }}
-          className="text-blog-para leading-[1.7] text-[16px] mt-[30px] mb-2 tracking-[0.225px]"
+          style={{
+            hyphens: "auto",
+            fontFamily: "Exchange, georgia, time",
+            fontWeight: 400,
+            fontStyle: "italic",
+          }}
+          className="text-common-color leading-[1.7] text-[16px] mt-[30px] mb-2 tracking-[0.225px]"
         >
           On the other hand, we denounce with righteous indignation and dislike
           men who are beguiledand demoralized charms.

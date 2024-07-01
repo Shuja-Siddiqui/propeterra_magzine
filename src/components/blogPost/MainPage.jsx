@@ -14,10 +14,11 @@ const MainPage = () => {
     <div className="main-container">
       <div className="container-fluid no-left-padding no-right-padding page-content blog-single cover-container">
         <div className="container-fluid flex flex-wrap xl:p-12 lg:p-12 md:p-12 sm:p-6 xs:p-6 xss:p-6">
-          <div className="entry-cover">
+          <div className="w-full entry-cover">
             <img
+              className="w-[100%]"
               height={605}
-              width={1170}
+              // width={1170}
               src={
                 state?.images[0].length > 0
                   ? state?.images[0]

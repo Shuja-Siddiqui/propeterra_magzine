@@ -31,7 +31,7 @@ const Slideshow = () => {
     <div className="w-full h-auto">
       <div className="w-full">
         <h3
-          style={{ textTransform: "uppercase", fontFamily: "sans-serif" }}
+          style={{ textTransform: "uppercase", fontFamily: "Escrow Condensed" }}
           className="widget-title text-[16px] leading-[1.66] pb-[10px] text-center"
         >
           TRENDING POSTS
@@ -42,7 +42,8 @@ const Slideshow = () => {
         </div>
       </div>
 
-      <div className="relative w-full min-h-[340px]">
+      {/* Child */}
+      <div className="relative w-full 3xl:h-[420px] 2xl:h-[420px] xl:h-[340px] lg:h-[340px] md:h-[340px] sm:h-[340px] xs:h-[340px] xss:h-[340px]">
         <div className="overflow-hidden">
           {slides.map((slide, index) => (
             <div
@@ -57,13 +58,26 @@ const Slideshow = () => {
                 className="w-full h-auto"
               />
               <div className="py-4 bg-white bg-opacity-50">
-                <h2 className="text-sm font-medium text-text-grey">{slide.category}</h2>
-                <h1 className="text-lg font-bold">{slide.title}</h1>
+                <h2 className="text-sm font-medium text-text-grey">
+                  {slide.category}
+                </h2>
+                <h1
+                  className="text-lg font-bold"
+                  style={{
+                    fontFamily:
+                      "Escrow Condensed, Alternate Times New Roman, serif",
+                  }}
+                >
+                  {slide.title}
+                </h1>
               </div>
             </div>
           ))}
         </div>
+      </div>
 
+      {/* Child */}
+      <div className="relative w-full 2xl:h-[0px] xl:h-[10px] lg:h-[10px] md:h-[10px] sm:h-[2px] xs:h-[2px] xss:h-[2px]">
         {/* Buttons */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 mt-2">
           {slides.map((_, index) => (

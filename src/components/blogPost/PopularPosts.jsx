@@ -5,7 +5,7 @@ const PopularPosts = () => {
   return (
     <div className="widget widget-popular-posts mt-[27px]">
       <h3
-        style={{ textTransform: "uppercase", fontFamily: "sans-serif" }}
+        style={{ textTransform: "uppercase", fontFamily: "Escrow Condensed" }}
         className="widget-title text-[16px] leading-[1.66] pb-[10px] text-center"
       >
         Popular Posts
@@ -16,14 +16,20 @@ const PopularPosts = () => {
       </div>
 
       {/* Link List */}
-      <ul className="flex flex-col gap-3">
+      <ul
+        className="flex flex-col gap-3"
+        style={{
+          fontWeight: 600,
+          fontFamily: "Escrow Condensed",
+          fontSize: "17px",
+        }}
+      >
         <li className="flex">
           <img src="http://placehold.it/100x80" alt="Instagram" />
-          <div
-            style={{ fontWeight: 400 }}
-            className="flex flex-col gap-2 ml-2 text-[15px] leading-[1.33]"
-          >
-            <Link href="#">Beautiful Landscape View of Rio de Janeiro</Link>
+          <div className="flex flex-col gap-2 ml-2 leading-[1.33]">
+            <Link style={{ fontFamily: "Escrow Condensed" }} href="#">
+              Beautiful Landscape View of Rio de Janeiro
+            </Link>
             <span>MARCH 10, 2017</span>
           </div>
         </li>

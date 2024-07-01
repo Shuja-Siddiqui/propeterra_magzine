@@ -46,7 +46,7 @@ function MobileNavbar({ setNewsFilter }) {
                 <Link
                   // to={item?.link}
                   onClick={() => setNewsFilter(item?.title)}
-                  className="text-black hover:opacity-50"
+                  className="text-common-color hover:text-black hover:font-medium"
                 >
                   {item?.title?.toUpperCase()}
                 </Link>
