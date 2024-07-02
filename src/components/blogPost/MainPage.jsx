@@ -20,7 +20,7 @@ const MainPage = () => {
               height={605}
               // width={1170}
               src={
-                state?.images[0].length > 0
+                state?.images?.length > 0
                   ? state?.images[0]
                   : "http://placehold.it/1170x605"
               }
