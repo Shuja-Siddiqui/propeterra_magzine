@@ -107,6 +107,7 @@ export const data = [
     title: "Economic Growth in Kenya Shows Positive Trends",
     full_text: "",
     images: [
+      "https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg",
       "https://example.com/image1.jpg",
       "https://example.com/image2.jpg",
     ],
@@ -125,9 +126,30 @@ export const data = [
     category: "emerging",
     country: "Brazil",
     date: "2024-04-10",
-    title: "Brazil's Agricultural Advancements",
+    title: "Brazil's Agricultural Advancemesnt",
     full_text: "",
     images: [],
     link: "https://example.com/article3",
+  },
+];
+
+export const journalReports = [
+  {
+    title: "The Quiet Power of Rituals in Retirement",
+    description:
+      "At a time when it’s easy to feel adrift, recurring acts give structure to my days and keep me connected to those I love.",
+    readTime: "6",
+    subArticles: [
+      { text: "The Secret to Finding Love After 60" },
+      {
+        text: "Two Minnesotans Retired in Cornwall, England. They Love It—Even the Food.",
+      },
+    ],
+  },
+  {
+    title: "Why, and How, to Break Up With Old Friends",
+    description: "",
+    readTime: "5",
+    subArticles: [],
   },
 ];
