@@ -28,7 +28,7 @@ const JournalReports = ({ reports }) => {
             style={{
               fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
             }}
-            className="text-lg font-bold cursor-pointer"
+            className="text-lg font-bold cursor-pointer 2xl:leading-6 xl:leading-6 lg:leading-6 md:leading-6 sm:leading-[1.75rem] xs:leading-[1.75rem] xss:leading-[1.75rem] transform scale-y-[1] md:scale-y-[1.3] lg:scale-y-[1.3] xl:scale-y-[1.3] 2xl:scale-y-[1.3] 3xl:scale-y-[1.3]"
             onClick={() => {
               setState(reports[0]);
               navigate("/blog");
@@ -66,7 +66,7 @@ const JournalReports = ({ reports }) => {
             style={{
               fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
             }}
-            className="text-lg font-bold"
+            className="text-lg font-bold transform scale-y-[1] md:scale-y-[1.3] lg:scale-y-[1.3] xl:scale-y-[1.3] 2xl:scale-y-[1.3] 3xl:scale-y-[1.3]"
           >
             Why, and How, to Break Up With Old Friends
           </h3>
