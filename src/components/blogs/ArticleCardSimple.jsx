@@ -14,7 +14,7 @@ function ArticleCardSimple({ title, description, article }) {
               setState(article);
               navigate("/blog");
             }}
-            className="text-xl font-bold mt-2 cursor-pointer"
+            className="text-xl font-bold mt-2 cursor-pointer  transform scale-y-[1] md:scale-y-[1.3] lg:scale-y-[1.3] xl:scale-y-[1.3] 2xl:scale-y-[1.3] 3xl:scale-y-[1.3]"
             style={{
               fontFamily: "Escrow Condensed, Alternate Times New Roman, serif",
             }}
