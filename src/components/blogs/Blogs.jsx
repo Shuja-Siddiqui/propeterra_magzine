@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ArticleCard from "./ArticleCard";
 import OpinionCard from "./OpinionCard";
 import ArticleOne from "./ArticleOne";
@@ -14,8 +14,10 @@ import ArticleCardPair from "./ArticleCardPair";
 import Newsletter from "../blogPost/Newsletter";
 import Slideshow from "../blogPost/SlideShow";
 import ArticleNumbered from "./ArticleNumbered";
+import Pagination from "../blog/Pagination";
 
 function Blogs() {
+  const [currentPage, setCurrentPage] = useState(1); // State to track current page
   // Function to map data into sections
   const mapDataToSections = (data) => {
     const leftSection = [];
@@ -36,6 +38,12 @@ function Blogs() {
   };
 
   const { leftSection, centerSection, rightSection } = mapDataToSections(data);
+
+  const itemsPerPage = 6;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  // Calculate total number of pages
+  const totalPages = Math.ceil(data?.length / itemsPerPage);
 
   return (
     <div className="max-w-screen-xl mx-auto xl:p-12 lg:p-12 md:p-12 sm:p-6 xs:p-6 xss:p-6">
@@ -151,6 +159,7 @@ function Blogs() {
                 title={article.title}
                 description={article.description}
                 link={article.link}
+                article={article}
               />
             ))}
 
@@ -189,6 +198,11 @@ function Blogs() {
           ))}
         </div>
       </div>
+      <Pagination
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        totalPages={totalPages}
+      />
     </div>
   );
 }

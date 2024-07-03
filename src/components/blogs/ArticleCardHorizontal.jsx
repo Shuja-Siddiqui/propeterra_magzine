@@ -45,7 +45,10 @@ function ArticleCardHorizontal({
           </p>
         </div>
         <Link
-          href="#"
+          onClick={() => {
+            setState(article);
+          }}
+          to={"/blog"}
           className="text-common-color mt-2 text-[12px] font-normal"
         >
           READ MORE
