@@ -112,7 +112,7 @@ function ArticleTripeHorizontal() {
       <div className="flex 2xl:space-x-8 xl:space-x-8 lg:space-x-8 md:space-x-8 sm:space-y-8 xs:space-y-8 xss:space-y-8">
         <div className="w-full flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col xs:flex-col xss:flex-col justify-between sm:gap-4 xs:gap-4 xss:gap-4">
           <ContentCard
-            image="https://via.placeholder.com/370x247"
+            image="https://www.propeterra.com/hubfs/Propeterra/Pavilions/TPN_Resort_Villa_Exteriors.jpg"
             title="Cliff Sunset Sea View"
             description="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings..."
             comment="6"
@@ -128,7 +128,7 @@ function ArticleTripeHorizontal() {
           />
 
           <ContentCard
-            image="https://via.placeholder.com/370x247"
+            image="https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg"
             title="Cliff Sunset Sea View"
             description="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings..."
             comment="6"
