@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { CiClock1 } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import MyContext from "../../context/MyContext";
 
 function ArticleSummary({
   image,
@@ -10,7 +11,9 @@ function ArticleSummary({
   link,
   comments,
   readTime,
+  article,
 }) {
+  const { setState } = useContext(MyContext);
   return (
     <div className="w-full flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col xs:flex-col xss:flex-col border-t py-4">
       <div className="flex-shrink-0">
@@ -37,7 +40,13 @@ function ArticleSummary({
             {description}Max Colchester on how the U.K. turned to a radical plan
             to deal with an influx of migrants: sending them to Rwanda. But for
             years, the plan has faced delays and challenges.&nbsp;
-            <Link to={link} className="text-blue-500 hover:underline">
+            <Link
+              onClick={() => {
+                setState(article);
+              }}
+              to={"/blog"}
+              className="text-blue-500 hover:underline cursor-pointer"
+            >
               Read Transcript
             </Link>
           </p>

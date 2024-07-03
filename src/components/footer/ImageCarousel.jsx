@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -9,11 +9,16 @@ import { data } from "../../api/dummy";
 import "./style.css";
 import useIsMobile from "../../hooks/useIsMobile";
 import { capitalizeFirstLetter } from "../../utils";
+import { useNavigate } from "react-router-dom";
+import MyContext from "../../context/MyContext";
 
 const ImageCarousel = () => {
+  const { setState } = useContext(MyContext);
+  const navigate = useNavigate();
   const isMobile = useIsMobile();
   return (
     <Swiper
+      className="mb-12"
       modules={[Autoplay, Pagination, Navigation]}
       spaceBetween={0}
       slidesPerView={isMobile ? 2 : data.length / 2}
@@ -24,7 +29,13 @@ const ImageCarousel = () => {
     >
       {data?.map((item) => {
         return (
-          <SwiperSlide className="relative cursor-pointer border-l-2">
+          <SwiperSlide
+            className="relative cursor-pointer border-l-2"
+            onClick={() => {
+              setState(item);
+              navigate("/blog");
+            }}
+          >
             <img
               className="h-[212px] w-[210px]"
               src={
