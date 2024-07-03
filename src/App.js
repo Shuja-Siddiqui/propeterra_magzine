@@ -49,6 +49,7 @@ function App() {
           <Route path="/" exact element={<Home newsFilter={newsFilter} />} />
           <Route path="/blog" element={<MainPage />} />
         </Routes>
+        <ImageCarousel />
 
         {isMobile ? <MobileFooter /> : <Footer />}
       </div>

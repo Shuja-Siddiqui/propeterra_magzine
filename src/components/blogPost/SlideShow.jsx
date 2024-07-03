@@ -3,17 +3,20 @@ import React, { useState, useEffect } from "react";
 const Slideshow = () => {
   const slides = [
     {
-      image: "http://placehold.it/345x230",
+      image:
+        "https://www.propeterra.com/hubfs/Propeterra/Pavilions/TPN_Resort_Villa_Exteriors.jpg",
       category: "Lifestyle",
       title: "New Fashion Collection Show This Weekend In Boston",
     },
     {
-      image: "http://placehold.it/345x230",
+      image:
+        "https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg",
       category: "Travel",
       title: "Best Travel Destinations for 2023",
     },
     {
-      image: "http://placehold.it/345x230",
+      image:
+        "https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Emerging%20Markets-1.png?quality=low&width=655&name=Market%20Cover_Emerging%20Markets-1.png",
       category: "Technology",
       title: "Latest Tech Trends to Watch",
     },
@@ -55,7 +58,7 @@ const Slideshow = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-auto"
+                className="w-full h-[230px]"
               />
               <div className="py-4 bg-white bg-opacity-50">
                 <h2 className="text-sm font-medium text-text-grey">

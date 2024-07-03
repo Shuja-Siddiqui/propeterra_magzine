@@ -19,7 +19,7 @@ const JournalReports = ({ reports }) => {
       </h2>
       <div className="bg-white overflow-hidden">
         <img
-          src={reports[0]?.image || "https://via.placeholder.com/500x200"}
+          src={reports[0]?.images || "https://via.placeholder.com/500x200"}
           alt="Journal Reports"
           className="w-full h-48 object-cover"
         />

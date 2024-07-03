@@ -18,7 +18,7 @@ const ArticleOne = ({
       <div className="border-b pb-8">
         <img
           className="w-full h-auto cursor-pointer"
-          src="https://via.placeholder.com/800x400"
+          src={image}
           alt="Main article"
           onClick={() => {
             setState(article);

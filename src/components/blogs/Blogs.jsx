@@ -11,6 +11,9 @@ import ArticleSummary from "./ArticleSummary";
 import ArticleTripeCards from "./ArticleTripleCards";
 import ArticleTripeHorizontal from "./ArticleTripleHorizontal";
 import ArticleCardPair from "./ArticleCardPair";
+import Newsletter from "../blogPost/Newsletter";
+import Slideshow from "../blogPost/SlideShow";
+import ArticleNumbered from "./ArticleNumbered";
 
 function Blogs() {
   // Function to map data into sections
@@ -38,7 +41,7 @@ function Blogs() {
     <div className="max-w-screen-xl mx-auto xl:p-12 lg:p-12 md:p-12 sm:p-6 xs:p-6 xss:p-6">
       <div className="flex xl:flex-row lg:flex-row md:flex-row xss:flex-col 2xl:space-x-8 xl:space-x-8 lg:space-x-8 md:space-x-8 sm:space-x-0 xs:space-x-0 xss:space-x-0">
         {/* Left Parent */}
-        <div className="2xl:w-1/4 xl:w-3/4 lg:w-1/4 md:w-1/4 sm:w-full xs:w-full xss:w-full">
+        <div className="2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-full xs:w-full xss:w-full">
           {/* Top */}
           <div className="w-full flex justify-between xl:flex-row lg:flex-row md:flex-row xss:flex-col">
             {/* Left Section */}
@@ -166,6 +169,24 @@ function Blogs() {
 
           {/* Journal Reports */}
           <JournalReports reports={journalReports} />
+          <hr />
+
+          {/* SlideShow */}
+          <Slideshow />
+          <hr />
+
+          {/* News Letter */}
+          <Newsletter />
+
+          {data.slice(1, 5).map((article, index) => (
+            <ArticleNumbered
+              key={index}
+              count={index + 1}
+              title={article.title}
+              description={article.description}
+              link={article.link}
+            />
+          ))}
         </div>
       </div>
     </div>

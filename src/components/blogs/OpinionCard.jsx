@@ -29,7 +29,11 @@ const OpinionCard = ({ opinions }) => {
         {opinions?.map((opinion, index) => {
           return (
             <li key={index} className="flex">
-              <img src="http://placehold.it/100x80" alt="Instagram" />
+              <img
+                className="max-w-[100px] min-w-[100px] max-h-[80px]"
+                src={opinion?.images[0] || "http://placehold.it/100x80"}
+                alt="Instagram"
+              />
               <div className="flex flex-col gap-2 ml-2 leading-[1.33]">
                 <Link
                   style={{
