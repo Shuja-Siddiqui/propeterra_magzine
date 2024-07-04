@@ -2,8 +2,10 @@ import React from "react";
 import { CiClock1 } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function ArticleCardPair({ articles }) {
+  const isMobile = useIsMobile();
   return (
     <div className="border-t py-4">
       <h2
@@ -18,9 +20,10 @@ function ArticleCardPair({ articles }) {
         {articles.map((article, index) => (
           <div
             key={index}
-            className={`flex-1 border-t md:border-t-0 md:border-l md:${
-              index === 0 ? "pl-0" : "pl-4"
-            } pt-4 md:pt-0`}
+            className={`flex-1 border-t md:border-t-0 md:${
+              index == 0 ? "border-l-0" : "border-l"
+            } ${index == 0 ? "pl-0" : "pl-4"} pt-4 md:pt-0`}
+            style={isMobile ? { paddingLeft: "0" } : {}}
           >
             <p className="text-sm text-gray-500">{article.author}</p>
             <h3
