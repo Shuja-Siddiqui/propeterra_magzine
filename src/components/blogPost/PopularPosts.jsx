@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { formatDate } from "../../utils";
 
-const PopularPosts = () => {
-  const data = [1, 3, 4, 5];
+const PopularPosts = ({ posts }) => {
   return (
     <div className="widget widget-popular-posts mt-[27px]">
       <h3
@@ -25,7 +25,7 @@ const PopularPosts = () => {
           fontSize: "17px",
         }}
       >
-        {data?.map(() => {
+        {posts?.map((item) => {
           return (
             <li className="flex">
               <img src="http://placehold.it/100x80" alt="Instagram" />
@@ -37,9 +37,11 @@ const PopularPosts = () => {
                   }}
                   href="#"
                 >
-                  Beautiful Landscape View of Rio de Janeiro
+                  {item?.title}
                 </Link>
-                <span style={{transform: "scale(1, 1.1)",}}>MARCH 10, 2017</span>
+                <span style={{ transform: "scale(1, 1.1)" }}>
+                  {formatDate(item?.date)}
+                </span>
               </div>
             </li>
           );

@@ -12,23 +12,22 @@ const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
     },
     {
       title: "Frontier Markets",
-      link: "/",
+      link: "/category",
     },
     {
       title: "Emerging Markets",
-      link: "/",
+      link: "/category",
     },
     {
       title: "Developed Markets",
-      link: "/",
+      link: "/category",
     },
     {
       title: "Special Situations",
-      link: "/",
+      link: "/category",
     },
     {
       title: "Platform",
-      link: "/",
     },
   ];
 
@@ -44,7 +43,9 @@ const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
                     <Link
                       to={item?.link}
                       onClick={() => {
-                        setNewsFilter(item?.title);
+                        item?.title === "Platform"
+                          ? scrollToTop()
+                          : setNewsFilter(item?.title);
                         scrollToTop();
                       }}
                       className="text-common-color font-medium hover:text-black font-montserrat text-sm tracking-[0.325px] leading-relaxed hover:font-medium opacity-65"
@@ -58,7 +59,7 @@ const NavBar = ({ showSearch, setShowSearch, setNewsFilter }) => {
               <button
                 type="button"
                 onClick={() => setShowSearch(!showSearch)}
-                className="text-gray-500"
+                className="text-gray-500 mx-[19px]"
               >
                 {showSearch ? <RxCross1 size={24} /> : <CiSearch size={24} />}
               </button>

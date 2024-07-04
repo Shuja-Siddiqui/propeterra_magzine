@@ -235,14 +235,14 @@ const Footer = () => {
                 <IoLogoInstagram size={24} />
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link
                 to={"https://www.youtube.com/channel/UCgwJvViOmypy2lL2ryfbMCw"}
                 target="_blank"
               >
                 <FaYoutube size={24} />
               </Link>
-            </li> */}
+            </li>
             
             <li>
               <Link to={"#"} target="_blank">

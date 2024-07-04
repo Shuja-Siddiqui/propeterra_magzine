@@ -17,6 +17,7 @@ import MainPage from "./components/blogPost/MainPage";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/helper/ScrollToTop";
 import ImageCarousel from "./components/footer/ImageCarousel";
+import CategoryPage from "./components/categories/CategoryPage";
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home newsFilter={newsFilter} />} />
           <Route path="/blog" element={<MainPage />} />
+          <Route path="/category" element={<CategoryPage newsFilter={newsFilter} />} />
         </Routes>
         <ImageCarousel />
 

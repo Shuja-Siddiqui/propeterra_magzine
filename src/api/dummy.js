@@ -4,7 +4,8 @@ export const data = [
     country: "Kenya",
     date: "2024-06-25",
     title: "Economic Growth in Kenya Shows Positive Trends",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://www.propeterra.com/hubfs/Propeterra/propeterra%20brochures/propeterra%20opporunities%20-%20small.png",
       "https://example.com/image2.jpg",
@@ -16,7 +17,8 @@ export const data = [
     country: "India",
     date: "2024-05-18",
     title: "India's Tech Industry Boom",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://www.propeterra.com/hubfs/Propeterra/Pavilions/TPN_Resort_Villa_Exteriors.jpg",
     ],
@@ -27,7 +29,8 @@ export const data = [
     country: "Brazil",
     date: "2024-04-10",
     title: "Brazil's Agricultural Advancements",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://www.propeterra.com/hubfs/Propeterra/Pavilions/TPN_Resort_Villa_Exteriors.jpg",
     ],
@@ -38,7 +41,8 @@ export const data = [
     country: "China",
     date: "2024-03-22",
     title: "China's New Trade Policies",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Frontier%20Markets-1.png?quality=low&width=333&name=Market%20Cover_Frontier%20Markets-1.png 333w, https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Frontier%20Markets-1.png?quality=low&width=665&name=Market%20Cover_Frontier%20Markets-1.png 665w, https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Frontier%20Markets-1.png?quality=low&width=998&name=Market%20Cover_Frontier%20Markets-1.png 998w, https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Frontier%20Markets-1.png?quality=low&width=1330&name=Market%20Cover_Frontier%20Markets-1.png 1330w, https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Frontier%20Markets-1.png?quality=low&width=1663&name=Market%20Cover_Frontier%20Markets-1.png 1663w, https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Frontier%20Markets-1.png?quality=low&width=1995&name=Market%20Cover_Frontier%20Markets-1.png 1995w",
       "https://example.com/image5.jpg",
@@ -50,7 +54,8 @@ export const data = [
     country: "Nigeria",
     date: "2024-02-15",
     title: "Nigeria's Oil Production Increases",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg",
     ],
@@ -61,7 +66,8 @@ export const data = [
     country: "Mexico",
     date: "2024-01-30",
     title: "Mexico's Tourism Sector Rebounds",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Emerging%20Markets-1.png?quality=low&width=655&name=Market%20Cover_Emerging%20Markets-1.png",
     ],
@@ -72,7 +78,8 @@ export const data = [
     country: "Vietnam",
     date: "2023-12-11",
     title: "Vietnam's Manufacturing Surge",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://www.propeterra.com/hubfs/Propeterra/Pavilions/TPN_Resort_Villa_Exteriors.jpg",
       "https://example.com/image8.jpg",
@@ -84,7 +91,8 @@ export const data = [
     country: "Turkey",
     date: "2023-11-05",
     title: "Turkey's Inflation Challenges",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://3957518.fs1.hubspotusercontent-na1.net/hub/3957518/hubfs/Market%20Cover_Emerging%20Markets-1.png?quality=low&width=655&name=Market%20Cover_Emerging%20Markets-1.png",
     ],
@@ -95,7 +103,8 @@ export const data = [
     country: "Indonesia",
     date: "2023-10-19",
     title: "Indonesia's Infrastructure Developments",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg",
     ],
@@ -106,7 +115,8 @@ export const data = [
     country: "Argentina",
     date: "2023-09-28",
     title: "Argentina's Debt Restructuring Efforts",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [],
     link: "https://example.com/article10",
   },
@@ -115,7 +125,8 @@ export const data = [
     country: "Kenya",
     date: "2024-06-25",
     title: "Economic Growth in Kenya Shows Positive Trends",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://t4.ftcdn.net/jpg/05/64/31/67/360_F_564316725_zE8llusnCk3Sfr9rdfKya6fV7BQbjfyV.jpg",
       "https://example.com/image1.jpg",
@@ -128,7 +139,8 @@ export const data = [
     country: "India",
     date: "2024-05-18",
     title: "India's Tech Industry Boom",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [
       "https://www.propeterra.com/hubfs/Propeterra/Pavilions/TPN_Resort_Villa_Exteriors.jpg",
     ],
@@ -139,9 +151,75 @@ export const data = [
     country: "Brazil",
     date: "2024-04-10",
     title: "Brazil's Agricultural Advancemesnt",
-    full_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
     images: [],
     link: "https://example.com/article3",
+  },
+  {
+    category: "emerging",
+    country: "Kenya",
+    date: "2024-06-25",
+    title: "Economic Growth in Kenya Shows Positive Trends",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    images: [
+      "https://www.propeterra.com/hubfs/Propeterra/propeterra%20brochures/propeterra%20opporunities%20-%20small.png",
+      "https://example.com/image2.jpg",
+    ],
+    link: "https://example.com/article1",
+  },
+  {
+    category: "emerging",
+    country: "Kenya",
+    date: "2024-06-25",
+    title: "Economic Growth in Kenya Shows Positive Trends",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    images: [
+      "https://www.propeterra.com/hubfs/Propeterra/propeterra%20brochures/propeterra%20opporunities%20-%20small.png",
+      "https://example.com/image2.jpg",
+    ],
+    link: "https://example.com/article1",
+  },
+  {
+    category: "emerging",
+    country: "Kenya",
+    date: "2024-06-25",
+    title: "Economic Growth in Kenya Shows Positive Trends",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    images: [
+      "https://www.propeterra.com/hubfs/Propeterra/propeterra%20brochures/propeterra%20opporunities%20-%20small.png",
+      "https://example.com/image2.jpg",
+    ],
+    link: "https://example.com/article1",
+  },
+  {
+    category: "emerging",
+    country: "Kenya",
+    date: "2024-06-25",
+    title: "Economic Growth in Kenya Shows Positive Trends",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    images: [
+      "https://www.propeterra.com/hubfs/Propeterra/propeterra%20brochures/propeterra%20opporunities%20-%20small.png",
+      "https://example.com/image2.jpg",
+    ],
+    link: "https://example.com/article1",
+  },
+  {
+    category: "emerging",
+    country: "Kenya",
+    date: "2024-06-25",
+    title: "Economic Growth in Kenya Shows Positive Trends",
+    full_text:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    images: [
+      "https://www.propeterra.com/hubfs/Propeterra/propeterra%20brochures/propeterra%20opporunities%20-%20small.png",
+      "https://example.com/image2.jpg",
+    ],
+    link: "https://example.com/article1",
   },
 ];
 
