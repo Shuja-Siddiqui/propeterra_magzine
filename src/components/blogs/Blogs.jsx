@@ -47,7 +47,7 @@ function Blogs() {
 
   return (
     <div className="max-w-screen-xl mx-auto xl:p-12 lg:p-12 md:p-12 sm:p-6 xs:p-6 xss:p-6">
-      <div className="flex xl:flex-row lg:flex-row md:flex-row xss:flex-col 2xl:space-x-8 xl:space-x-8 lg:space-x-8 md:space-x-8 sm:space-x-0 xs:space-x-0 xss:space-x-0">
+      <div className="flex xl:flex-row lg:flex-row md:flex-row xss:flex-col 2xl:space-x-4 xl:space-x-4 lg:space-x-4 md:space-x-4 sm:space-x-0 xs:space-x-0 xss:space-x-0">
         {/* Left Parent */}
         <div className="2xl:w-3/4 xl:w-3/4 lg:w-3/4 md:w-3/4 sm:w-full xs:w-full xss:w-full">
           {/* Top */}
@@ -66,6 +66,9 @@ function Blogs() {
                 />
               ))}
             </div>
+
+            {/* Line Break */}
+            <div className="h-auto border-l"></div>
 
             {/* Center Section */}
             <div className="2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] sm:w-full xs:w-full xss:w-full space-y-8">
@@ -170,6 +173,8 @@ function Blogs() {
             <ArticleCardPair articles={centerSection.slice(0, 2)} />
           </div>
         </div>
+        {/* Line Break */}
+        <div className="h-auto border-l"></div>
 
         {/* Right Section */}
         <div className="2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-full xs:w-full xss:w-full space-y-8">
