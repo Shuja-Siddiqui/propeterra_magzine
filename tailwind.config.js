@@ -22,6 +22,7 @@ module.exports = {
         lg: "1024px", // Correct
         "2lg": "1163px", // Correct
         xl: "1280px", // Correct
+        mxl: "1440px", // Correct
         "2xl": "1536px", // Correct
         "3xl": "1868px", // Correct
       },

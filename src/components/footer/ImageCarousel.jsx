@@ -21,7 +21,7 @@ const ImageCarousel = () => {
       className="mb-12"
       modules={[Autoplay, Pagination, Navigation]}
       spaceBetween={0}
-      slidesPerView={isMobile ? 2 : data.length / 2}
+      slidesPerView={isMobile ? 2 : 6.5}
       autoplay={{ delay: 3000 }}
       loop={true}
       pagination={{ clickable: true }}

@@ -7,6 +7,7 @@ import About from "./About";
 import Slideshow from "./SlideShow";
 import Newsletter from "./Newsletter";
 import MyContext from "../../context/MyContext";
+import { data } from "../../api/dummy";
 
 const MainPage = () => {
   const { state } = useContext(MyContext);
@@ -32,7 +33,7 @@ const MainPage = () => {
               <BlogPost />
             </div>
             <div className="xl:w-[30%] lg:w-[30%] md:w-[30%] sm:w-[100%] xs:w-[100%] xss:w-[100%] widget-area">
-              <PopularPosts />
+              <PopularPosts posts={data?.slice(0, 4)} />
               <Tags />
               <About />
               <Slideshow />

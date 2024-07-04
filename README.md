@@ -29,6 +29,7 @@ Once the installer has been downloaded, follow these steps:
 #### Step 3: Run Project
 
 On terminal window enter these commands follow these steps:
+
  ```bash
 npm install
    ```
