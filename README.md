@@ -8,7 +8,7 @@ To run this project, you need to have Node.js installed on your MacBook. Follow 
 
 1. Visit the [Node.js download page](https://nodejs.org/en/download/prebuilt-installer).
 2. Click on the "Pre-built installer" tab.
-3. Select "macOS" from the version dropdown menu.
+3. Select "macOS" from the version dropdown menu.(Note: If you are Windows user then select window).
 4. Press the "Download" button to download the installer.
 
 ### Step 2: Verify Installation
