@@ -29,7 +29,12 @@ Once the installer has been downloaded, follow these steps:
 #### Step 3: Run Project
 
 On terminal window enter these commands follow these steps:
-
-1. npm install
-2. npm start
-3. npm run tailwind
+ ```bash
+   npm install
+   ```
+```bash
+   npm start
+ ```
+```bash
+   npm run tailwind
+```
