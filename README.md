@@ -30,11 +30,11 @@ Once the installer has been downloaded, follow these steps:
 
 On terminal window enter these commands follow these steps:
  ```bash
-   npm install
+npm install
    ```
 ```bash
-   npm start
+npm start
  ```
 ```bash
-   npm run tailwind
+npm run tailwind
 ```
